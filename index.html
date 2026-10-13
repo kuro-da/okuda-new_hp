@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<title>株式会社奥田商会 | 人と人とのコミュニケーションを大切に</title>
+<meta name="description" content="株式会社奥田商会は昭和六年創業、官公庁指定商社です。事業内容、取扱商品、採用情報、会社概要をご覧いただけます。">
+<link rel="canonical" href="https://example.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="株式会社奥田商会">
+<meta property="og:description" content="昭和六年創業、官公庁指定商社。人と人とのコミュニケーションを大切に。">
+<meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "株式会社奥田商会",
+  "alternateName": "奥田商会",
+  "url": "https://example.com/",
+  "description": "昭和六年創業、官公庁指定商社。人と人とのコミュニケーションを大切にする会社です。",
+  "foundingDate": "1931",
+  "address": { "@type": "PostalAddress", "addressCountry": "JP", "streetAddress": "[要確認]" },
+  "telephone": "[要確認]",
+  "email": "[要確認]"
+}
+</script>
+<style>
+  :root {
+    --bg: #f4f4f2;
+    --surface: #ffffff;
+    --ink: #111111;
+    --muted: #6b6b6b;
+    --line: #dcdcd8;
+    --dark: #151515;
+    --dark-text: #f4f4f2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101010; --surface: #1a1a1a; --ink: #f2f2f0; --muted: #a0a0a0; --line: #2c2c2c; --dark: #000; --dark-text: #f2f2f0;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101010; --surface: #1a1a1a; --ink: #f2f2f0; --muted: #a0a0a0; --line: #2c2c2c; --dark: #000; --dark-text: #f2f2f0;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif;
+    font-weight: 400;
+    line-height: 1.9;
+    letter-spacing: .02em;
+  }
+  img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  a { color: inherit; text-underline-offset: .25em; }
+  a:focus-visible, .btn:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+  }
+
+  /* 左縦ナビ（12-officeの縦メニューに寄せる） */
+  .side {
+    position: fixed; left: 0; top: 0; bottom: 0; width: 84px; z-index: 20;
+    display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+    padding: 28px 0; background: var(--surface); border-right: 1px solid var(--line);
+  }
+  .side .mark { font-weight: 700; font-size: 14px; writing-mode: vertical-rl; letter-spacing: .3em; text-decoration: none; }
+  .side nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 26px; }
+  .side nav a {
+    writing-mode: vertical-rl; font-size: 13px; color: var(--muted); text-decoration: none; letter-spacing: .25em;
+  }
+  .side nav a:hover { color: var(--ink); }
+  .side .tel { writing-mode: vertical-rl; font-size: 12px; color: var(--muted); letter-spacing: .2em; }
+
+  main { margin-left: 84px; }
+  .sec { padding: 120px 64px; }
+  .sec + .sec { border-top: 1px solid var(--line); }
+  .label { display: flex; align-items: center; gap: 12px; font-size: 12px; letter-spacing: .3em; color: var(--muted); margin: 0 0 16px; }
+  .label::before { content: ""; width: 32px; height: 1px; background: currentColor; }
+  h2 { font-size: clamp(28px, 4vw, 44px); font-weight: 500; line-height: 1.5; letter-spacing: .04em; margin: 0 0 48px; }
+  p.body { color: var(--muted); max-width: 620px; margin: 0; }
+
+  /* ヒーロー：左右スプリット、大見出し */
+  .hero { display: grid; grid-template-columns: 1.1fr 1fr; min-height: 100vh; }
+  .hero .photo { position: relative; overflow: hidden; }
+  .hero .photo img { position: absolute; inset: 0; }
+  .hero .copy {
+    background: var(--dark); color: var(--dark-text);
+    display: flex; flex-direction: column; justify-content: center; padding: 80px 64px;
+  }
+  .hero .copy .small { font-size: 14px; letter-spacing: .2em; opacity: .75; margin: 0 0 28px; }
+  .hero h1 { font-size: clamp(40px, 6vw, 76px); font-weight: 500; line-height: 1.2; margin: 0 0 32px; letter-spacing: .04em; }
+  .hero .scroll { margin-top: 56px; font-size: 12px; letter-spacing: .3em; opacity: .7; }
+
+  .founded { display: flex; align-items: baseline; gap: 16px; margin-top: 8px; }
+  .founded strong { font-size: 40px; font-weight: 300; }
+
+  /* 事業内容 */
+  .list-rows { border-top: 1px solid var(--ink); }
+  .list-rows .row { display: grid; grid-template-columns: 90px 1fr; gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--line); }
+  .list-rows .num { font-size: 13px; color: var(--muted); letter-spacing: .15em; padding-top: 6px; }
+  .list-rows h3 { margin: 0 0 8px; font-size: 20px; font-weight: 500; }
+  .list-rows p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  /* 写真グリッド */
+  .gallery { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; margin-top: 56px; }
+  .gallery .ph { aspect-ratio: 4 / 3; overflow: hidden; background: var(--line); }
+  .gallery .ph.tall { aspect-ratio: auto; grid-row: span 2; position: relative; min-height: 100%; }
+  .gallery .ph.tall img { position: absolute; inset: 0; }
+  .gallery .ph img { transition: transform .8s ease; }
+  .gallery .ph:hover img { transform: scale(1.04); }
+  .credit { font-size: 12px; color: var(--muted); margin-top: 12px; }
+
+  /* 採用 */
+  .recruit { background: var(--dark); color: var(--dark-text); }
+  .recruit .body { color: #b8b8b8; }
+  .recruit .table { display: grid; gap: 0; margin-top: 40px; }
+  .recruit .table div { padding: 22px 0; border-top: 1px solid #333; display: grid; grid-template-columns: 180px 1fr; gap: 24px; }
+  .recruit .table dt { color: #9a9a9a; }
+  .recruit .table dd { margin: 0; }
+  .todo { color: #ff9b8f; }
+  .recruit .btn { display: inline-block; margin-top: 40px; padding: 16px 40px; border: 1px solid var(--dark-text); color: var(--dark-text); text-decoration: none; letter-spacing: .2em; font-size: 14px; }
+  .recruit .btn:hover { background: var(--dark-text); color: var(--dark); }
+
+  /* 会社概要 */
+  dl.profile { margin: 0; display: grid; grid-template-columns: 200px 1fr; }
+  dl.profile dt, dl.profile dd { margin: 0; padding: 20px 0; border-top: 1px solid var(--line); }
+  dl.profile dt { color: var(--muted); font-size: 14px; }
+  dl.profile dd { font-size: 16px; }
+  .todo-inline { color: #b3261e; font-size: 14px; }
+  @media (prefers-color-scheme: dark) { .todo-inline { color: #ff9b8f; } }
+
+  /* お問い合わせ */
+  .contact .btn { display: inline-block; padding: 18px 48px; background: var(--ink); color: var(--bg); text-decoration: none; letter-spacing: .2em; font-size: 14px; }
+
+  /* 固定の左ナビ（84px）の下に文字が隠れないよう、フッターも右側に寄せる */
+  footer { margin-left: 84px; padding: 40px 64px; font-size: 12px; color: var(--muted); border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  footer a:hover { color: var(--ink); }
+
+  @media (max-width: 900px) {
+    .side { position: static; width: auto; height: auto; flex-direction: row; padding: 16px; border-right: none; border-bottom: 1px solid var(--line); }
+    .side .mark, .side nav a, .side .tel { writing-mode: horizontal-tb; }
+    .side nav ul { flex-direction: row; gap: 16px; flex-wrap: wrap; justify-content: center; }
+    main { margin-left: 0; }
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero .photo { aspect-ratio: 4 / 3; }
+    .hero .copy { padding: 56px 24px; }
+    .sec { padding: 72px 24px; }
+    h2 { margin-bottom: 32px; }
+    .hero .photo { aspect-ratio: 4 / 3; }
+    .hero .copy .small { margin-bottom: 20px; }
+    .hero .copy .scroll { margin-top: 40px; }
+    .gallery { grid-template-columns: 1fr; }
+    .gallery .ph.tall { grid-row: auto; min-height: 0; aspect-ratio: 4 / 3; }
+    .gallery .ph.tall img { position: static; }
+    .list-rows .row { grid-template-columns: 56px 1fr; gap: 16px; }
+    footer { margin-left: 0; padding: 32px 24px; }
+    .contact .btn, .recruit .btn { display: block; text-align: center; }
+    .recruit .table div, dl.profile { grid-template-columns: 1fr; gap: 6px; }
+    dl.profile dt { border-top: 1px solid var(--line); padding-bottom: 0; }
+    dl.profile dd { padding-top: 6px; }
+  }
+</style>
+</head>
+<body>
+
+<aside class="side">
+  <a class="mark" href="#top">奥田商会</a>
+  <nav aria-label="メインメニュー">
+    <ul>
+      <li><a href="#about">会社概要</a></li>
+      <li><a href="#business">事業内容</a></li>
+      <li><a href="#gallery">取り組み</a></li>
+      <li><a href="#recruit">採用情報</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ul>
+  </nav>
+  <span class="tel">[要確認: 電話番号]</span>
+</aside>
+
+<main id="top">
+
+  <header class="hero">
+    <div class="photo">
+      <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=1400&q=80" alt="植物や椅子のあるモダンなラウンジ空間">
+    </div>
+    <div class="copy">
+      <p class="small">株式会社奥田商会</p>
+      <h1>人と人との<br>コミュニケーションを<br>大切に</h1>
+      <div class="founded">
+        <span>創業</span><strong>昭和六年</strong>
+      </div>
+      <p class="body" style="color:#b8b8b8;margin-top:24px;">官公庁指定商社</p>
+      <span class="scroll">SCROLL</span>
+    </div>
+  </header>
+
+  <section class="sec" id="about">
+    <p class="label">ABOUT</p>
+    <h2>会社概要</h2>
+    <dl class="profile">
+      <dt>会社名</dt><dd>株式会社奥田商会（OKUDA Co., Ltd.）</dd>
+      <dt>創業</dt><dd>昭和六年</dd>
+      <dt>資格</dt><dd>官公庁指定商社</dd>
+      <dt>所在地</dt><dd><span class="todo-inline">[要確認]</span></dd>
+      <dt>設立</dt><dd><span class="todo-inline">[要確認]</span></dd>
+      <dt>代表者</dt><dd><span class="todo-inline">[要確認]</span></dd>
+      <dt>従業員数</dt><dd><span class="todo-inline">[要確認]</span></dd>
+    </dl>
+  </section>
+
+  <section class="sec" id="business">
+    <p class="label">BUSINESS</p>
+    <h2>事業内容</h2>
+    <div class="list-rows">
+      <div class="row"><span class="num">01</span><div><h3>[要確認: 事業名1]</h3><p>[要確認: 内容を2〜3行で]</p></div></div>
+      <div class="row"><span class="num">02</span><div><h3>[要確認: 事業名2]</h3><p>[要確認: 内容を2〜3行で]</p></div></div>
+      <div class="row"><span class="num">03</span><div><h3>[要確認: 事業名3]</h3><p>[要確認: 内容を2〜3行で]</p></div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="gallery">
+    <p class="label">WORKS</p>
+    <h2>取り組み</h2>
+    <p class="body">[要確認: 取り組みの紹介文。写真は雰囲気のイメージです]</p>
+    <div class="gallery">
+      <figure style="margin:0">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&w=1200&q=80" alt="オープンオフィスで協力する3人"></div>
+      </figure>
+      <figure style="margin:0">
+        <div class="ph tall"><img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?auto=format&fit=crop&w=900&q=80" alt="打ち合わせをする人々"></div>
+      </figure>
+      <figure style="margin:0">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80" alt="ガラス扉のある廊下"></div>
+      </figure>
+    </div>
+    <p class="credit">写真: Unsplash（無料素材）</p>
+  </section>
+
+  <section class="sec recruit" id="recruit">
+    <p class="label">RECRUIT</p>
+    <h2>採用情報</h2>
+    <p class="body">奥田商会で、一緒に働く仲間を募集しています。</p>
+    <dl class="table" style="margin:40px 0 0; padding:0;">
+      <div><dt>募集職種</dt><dd><span class="todo">[要確認]</span></dd></div>
+      <div><dt>勤務地</dt><dd><span class="todo">[要確認]</span></dd></div>
+      <div><dt>雇用形態・勤務時間</dt><dd><span class="todo">[要確認]</span></dd></div>
+      <div><dt>応募方法</dt><dd><span class="todo">[要確認]</span></dd></div>
+    </dl>
+    <a class="btn" href="#contact">応募・お問い合わせ</a>
+  </section>
+
+  <section class="sec contact" id="contact">
+    <p class="label">CONTACT</p>
+    <h2>お問い合わせ</h2>
+    <dl class="profile">
+      <dt>電話</dt><dd><span class="todo-inline">[要確認]</span></dd>
+      <dt>メール</dt><dd><span class="todo-inline">[要確認]</span></dd>
+      <dt>受付時間</dt><dd><span class="todo-inline">[要確認]</span></dd>
+    </dl>
+  </section>
+
+</main>
+
+<footer>
+  <span>© 株式会社奥田商会 All rights reserved.</span>
+  <span>写真: <a href="https://unsplash.com/" rel="noopener">Unsplash</a></span>
+</footer>
+
+</body>
+</html>
